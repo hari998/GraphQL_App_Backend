@@ -14,6 +14,6 @@ app.use('/graphql', graphqlHTTP({
     graphiql: process.env.NODE_ENV == 'development'
 }))
 
-app.get('/', (req, res) => res.send('hello'))
+app.get('/', (req, res) => res.redirect('/graphql'))
 
 app.listen(port, (req, res) => (console.log(`express at port: ${port}`)))
