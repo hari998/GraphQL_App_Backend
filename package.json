@@ -1,0 +1,28 @@
+{
+  "name": "graphql_app_backend",
+  "version": "1.0.0",
+  "description": "GraphQL - nodejs - express.js - MongoDB - Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hari998/GraphQL_App_Backend.git"
+  },
+  "author": "hariom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hari998/GraphQL_App_Backend/issues"
+  },
+  "homepage": "https://github.com/hari998/GraphQL_App_Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "mongoose": "^6.3.6"
+  }
+}
