@@ -4,13 +4,13 @@ const port = process.env.PORT || 5000
 const mongoose = require('mongoose')
 const connectDB = require('./config/db')
 const { graphqlHTTP } = require('express-graphql')
-const schema = require('./schema/schema')
+const Note = require('./schema/Note')
 
 const app = express()
 connectDB()
 
 app.use('/graphql', graphqlHTTP({
-    schema,
+    schema: Note,
     graphiql: process.env.NODE_ENV == 'development'
 }))
 
